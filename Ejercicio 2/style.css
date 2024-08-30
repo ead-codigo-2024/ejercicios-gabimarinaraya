@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arvo', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    width: 1270px; /* Ancho cuadrado */
+    height: 400px; /* Alto cuadrado */
+    background-color: #eeff41; /* Color cuadrado amarillo */
+    display: flex;
+    flex-direction: row; /* Alineación en fila */
+    justify-content: space-between; /* Espacio entre el texto y las imágenes */
+    align-items: center; /* Centra el contenido verticalmente */
+    color: #000000; /* Color del texto */
+    padding: 50px; /* Espacio interno */
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto */
+    border: 2px solid white; /* Borde blanco */
+    margin: 20px; /* Margen alrededor del cuadrado */
+    border-radius: 20px; /* Radio de borde para esquinas redondeadas */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; /* Alinea el texto verticalmente */
+    justify-content: center; /* Centra el texto verticalmente */
+    max-width: 550px; /* Limita el ancho del texto */
+}
+
+.text-content h1, .text-content h2, .text-content p {
+    margin: 0;
+    text-align: left; /* Alinear texto a la izquierda dentro del contenedor de texto */
+}
+
+.text-content h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px; /* Tamaño de letra para el título chico */
+    font-weight: 500; /* O usa 400 para el peso normal si prefieres */
+    margin: 10px 0;
+}
+
+.text-content h2 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 60px; /* Tamaño de letra para el título grande */
+    margin: 10px 0;
+}
+
+.text-content p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px; /* Tamaño de letra para el contenido */
+    font-weight: 300; /* O usa 400 para el peso normal si prefieres */
+    margin-top: 10px; /* Espacio superior para separar del título */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.fotos {
+    display: flex;
+    flex-direction: row; /* Alinea imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    gap: 50px; /* Espacio entre las imágenes */
+}
+
+.foto-item {
+    display: flex;
+    flex-direction: column; /* Alinea imagen y subtítulo verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+.circular-img {
+    width: 220px; /* Ajusta según sea necesario */
+    height: 220px; /* Ajusta según sea necesario */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
+}
+
+.links {
+    margin-top: 10px; /* Espacio entre las imágenes y los subtítulos */
+}
+
+.link {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: #000000; /* Color de los enlaces */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    margin-top: 5px; /* Espacio superior para separar de la imagen */
+    text-align: center; /* Centra el texto del enlace */
+}
+
+.link:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el ratón */
+}
